@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "82832181848",
+    "firebase_url": "https://watchaddsforfree.firebaseio.com",
+    "project_id": "watchaddsforfree",
+    "storage_bucket": "watchaddsforfree.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82832181848:android:4139bb13f4164449",
+        "android_client_info": {
+          "package_name": "com.cryptonym0.watchaddsforfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82832181848-5h42irrkg4llsj2cads6ll720svngvq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAugtdYbqRIId_8JT3NH2LCh3TUJCyiu1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82832181848-5h42irrkg4llsj2cads6ll720svngvq8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
