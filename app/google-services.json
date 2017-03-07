@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "82832181848-5miop0qp3efro1a508bj6rqjc9elr005.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cryptonym0.watchaddsforfree",
+            "certificate_hash": "5a96c87fc66b8480e8eb0391a29b9699a3ee91a3"
+          }
+        },
+        {
+          "client_id": "82832181848-v7gp03chjevfn3l0m96mgkt108kfapqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cryptonym0.watchaddsforfree",
+            "certificate_hash": "9d14ee5df7e4a0b68c0c05f820033d004162613f"
+          }
+        },
+        {
           "client_id": "82832181848-5h42irrkg4llsj2cads6ll720svngvq8.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -22,6 +38,9 @@
       "api_key": [
         {
           "current_key": "AIzaSyAugtdYbqRIId_8JT3NH2LCh3TUJCyiu1Y"
+        },
+        {
+          "current_key": "AIzaSyArnWXX-5ZGUpkWhTtz7MmxWPWH4Cttpn4"
         }
       ],
       "services": {
