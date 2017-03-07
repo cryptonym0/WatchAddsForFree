@@ -1,6 +1,8 @@
 package com.cryptonym0.watchaddsforfree;
 
 import android.app.DownloadManager;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -17,7 +19,26 @@ import static com.google.android.gms.internal.zzs.TAG;
  */
 
 public class MyFirebaseIDService extends FirebaseInstanceIdService {
+    //Creat instance
+    //Variables
 
 
+    @Override
+    public void onTokenRefresh() {
+        //Send to server - Firebase
+        String r_token = FirebaseInstanceId.getInstance().getToken();
+        sendRegistrationToServer(r_token);
 
+        //put in schared prefs
+        SharedPreferences share = getApplicationContext().getSharedPreferences(getString(R.string.FCM_PREF), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = share.edit();
+        editor.putString(getString(R.string.FCM_TOKEN), r_token);
+        editor.commit();
+
+    }
+
+    //Send registration to MY APP server
+    private void sendRegistrationToServer(String r_token) {
+
+    }
 }

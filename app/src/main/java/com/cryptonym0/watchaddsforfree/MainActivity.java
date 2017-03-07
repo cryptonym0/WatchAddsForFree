@@ -14,6 +14,8 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
     //variables
+    MyFirebaseIDService tokenHelper = new MyFirebaseIDService();
+
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
 
     @Override
@@ -26,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+
+        //Get device token
+        tokenHelper.onTokenRefresh();
+
 
         //Add topic
         FirebaseMessaging.getInstance().subscribeToTopic("news");
