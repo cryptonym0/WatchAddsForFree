@@ -29,11 +29,13 @@ public class MyFirebaseIDService extends FirebaseInstanceIdService {
         String r_token = FirebaseInstanceId.getInstance().getToken();
         sendRegistrationToServer(r_token);
 
+        Log.d("TOKEN:", r_token );
+
         //put in schared prefs
-        SharedPreferences share = getApplicationContext().getSharedPreferences(getString(R.string.FCM_PREF), Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = share.edit();
-        editor.putString(getString(R.string.FCM_TOKEN), r_token);
-        editor.commit();
+//        SharedPreferences share = getApplicationContext().getSharedPreferences(getString(R.string.FCM_PREF), Context.MODE_PRIVATE);
+//        SharedPreferences.Editor editor = share.edit();
+//        editor.putString(getString(R.string.FCM_TOKEN), r_token);
+//        editor.commit();
 
     }
 
